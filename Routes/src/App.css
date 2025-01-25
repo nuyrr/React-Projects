@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Welcome Card */
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button Group Styling */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Buttons Styling */
+.btn {
+  width: 80%;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.btn-login {
+  background-color: #3498db;
+}
+
+.btn-login:hover {
+  background-color: #2980b9;
+}
+
+.btn-signup {
+  background-color: #2ecc71;
+}
+
+.btn-signup:hover {
+  background-color: #27ae60;
+}
+
+.btn-submit {
+  background-color: #e74c3c;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btn-submit:hover {
+  background-color: #c0392b;
+}
+
+/* Input Field Styling */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.input-field:focus {
+  border-color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
